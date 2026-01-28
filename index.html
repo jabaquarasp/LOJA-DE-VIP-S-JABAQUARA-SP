@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jabaquara Roleplay | Loja Oficial</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Segoe UI', sans-serif; }
+        body { background-color: #0d0d0d; color: white; line-height: 1.6; }
+        
+        header { text-align: center; padding: 40px 20px; background: linear-gradient(to bottom, #220000, #0d0d0d); }
+        .logo-principal { width: 280px; filter: drop-shadow(0 0 15px rgba(255, 0, 0, 0.4)); margin-bottom: 20px; }
+        
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        h2.section-title { text-align: center; margin: 40px 0 20px; font-size: 2.5rem; color: #ff0000; text-transform: uppercase; letter-spacing: 2px; }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 25px; margin-bottom: 50px; }
+        
+        .card { background: #111; border: 1px solid #333; border-radius: 15px; padding: 20px; text-align: center; transition: 0.3s; display: flex; flex-direction: column; height: 100%; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 0 20px rgba(255, 0, 0, 0.2); }
+        
+        .card img { width: 100%; border-radius: 10px; margin-bottom: 15px; aspect-ratio: 1/1; object-fit: cover; }
+        .price { font-size: 2rem; font-weight: bold; color: #2ecc71; margin-bottom: 15px; }
+        
+        .benefits { text-align: left; list-style: none; margin-bottom: 20px; flex-grow: 1; font-size: 0.95rem; }
+        .benefits li { margin-bottom: 8px; border-bottom: 1px solid #222; padding-bottom: 5px; }
+
+        .btn-pix { background: #ff0000; color: white; border: none; padding: 15px; border-radius: 8px; font-weight: bold; cursor: pointer; text-transform: uppercase; width: 100%; transition: 0.3s; font-size: 1rem; }
+        .btn-pix:hover { background: #cc0000; box-shadow: 0 0 15px rgba(255, 0, 0, 0.5); }
+        
+        /* Cores das Bordas dos VIPs conforme seus prints */
+        .rubi { border: 2px solid #e0115f; }
+        .diamante { border: 2px solid #b9f2ff; }
+        .ouro { border: 2px solid #ffd700; }
+        .prata { border: 2px solid #c0c0c0; }
+        .bronze { border: 2px solid #cd7f32; }
+
+        footer { text-align: center; padding: 60px 20px; color: #666; border-top: 1px solid #222; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="https://media.discordapp.net/attachments/1354954334751817741/1465927315421663252/Design_sem_nome_3.png?ex=697ae2b3&is=69799133&hm=e9d376816cb36e186a390c0adef435ccfd2043e495f0da5a947fad6d92080f7c&=&format=webp&quality=lossless" alt="Jabaquara RP Logo" class="https://media.discordapp.net/attachments/1354954334751817741/1463935312077127801/jabaquara_roleplay.png?ex=697a3b01&is=6978e981&hm=d2d9b08adcd786ccca12b4bd6820d4ad45150ec55cacd20e09a256075cdeee99&=&format=webp&quality=lossless&width=814&height=814">
+        <h1>LOJA OFICIAL JABAQUARA</h1>
+    </header>
+
+    <div class="container">
+        
+        <h2 class="section-title">Pacotes VIP</h2>
+        <div class="grid">
+            
+            <div class="card rubi">
+                <img src="https://media.discordapp.net/attachments/1354954334751817741/1463985256737800336/content.png?ex=697a6984&is=69791804&hm=b476b34acd60f0c1915526df7fe1b83f40b2ff5d0bea3feacb4dd832ee80cf76&=&format=webp&quality=lossless&width=724&height=724" alt="VIP Rubi">
+                <h3>VIP RUBI</h3>
+                <p class="price">R$ 320,00</p>
+                <ul class="benefits">
+                    <li>💵 50.000 no Pix do jogo</li>
+                    <li>🚗 Tiggo 8 Pro</li>
+                    <li>🏎️ Porsche Conversível</li>
+                    <li>🚘 Lamborghini Urus</li>
+                    <li>🏍️ BMW S1000</li>
+                    <li>🔫 Combo 10 Revólveres + 200 munições</li>
+                    <li>📍 1 Blip de Garagem no mapa</li>
+                </ul>
+                <button class="btn-pix" onclick="copyPix()">Comprar com PIX</button>
+            </div>
+
+            <div class="card diamante">
+                <img src="https://media.discordapp.net/attachments/1354954334751817741/1463985257224343806/content.png?ex=697a6984&is=69791804&hm=8fcb41db55f4eff8c2501f662da4edb6658186ac306beaa718eb3da949f62e07&=&format=webp&quality=lossless&width=724&height=724" alt="VIP Diamante">
+                <h3>VIP DIAMANTE</h3>
+                <p class="price">R$ 150,00</p>
+                <ul class="benefits">
+                    <li>💰 R$ 20.000 no PIX do Jogo</li>
+                    <li>🔹 100 Gemas (Conc. VIP)</li>
+                    <li>🏍️ Moto Pan América</li>
+                    <li>🏎️ Porsche 911</li>
+                    <li>⚡ Prioridade na Fila</li>
+                </ul>
+                <button class="btn-pix" onclick="copyPix()">Comprar com PIX</button>
+            </div>
+
+            <div class="card ouro">
+                <img src="https://media.discordapp.net/attachments/1354954334751817741/1465926483846631484/AMW1TPplMIibt9fM03W0lG4su9jl4cVZBbsxV1hf0eXP18bPHvQ5SjXuLC5ICeqtGBEIVwStBu-aNOs4Y531lB8MDoKm033Bw_abPsMykSAXOwvlqG0qTQXrcF-8Qm9Ui3yHeIf0ht1Hy9GWFGWCyNONTS4uH_o9XLqP1_k4yiY3dh_JO5EKKAN50q50laG-tjW52IYU80lR2qXSVmHXQaheEk0XaeLe89L9kfp2rUgdmoEXIdXGeq_Skg-rL_zAyScedIhHLeO_g1zujGwIUEBJKUXCijMxrL3j0UytYdR1OfN8LhIODEYfIF6vxQQaDEe_jH29O3F4c6tyQ13uLNd-ZZM-s1024-rj.png?ex=697ae1ed&is=6979906d&hm=2891aeed03c8e5db92ad7cab47ad03fb7cf91733859065e4bbb275e32b3169bf&=&format=webp&quality=lossless&width=814&height=814" alt="VIP Ouro">
+                <h3>VIP OURO</h3>
+                <p class="price">R$ 100,00</p>
+                <ul class="benefits">
+                    <li>🚗 +3 Slots na Garagem</li>
+                    <li>📸 Insta Verificado (30 dias)</li>
+                    <li>🎧 Spotify (30 dias)</li>
+                    <li>👕 3 Slots de Roupa (F9)</li>
+                    <li>🚘 BMW Z4</li>
+                    <li>🏍️ 1250 Edição 40 anos</li>
+                </ul>
+                <button class="btn-pix" onclick="copyPix()">Comprar com PIX</button>
+            </div>
+
+            <div class="card prata">
+                <img src="https://media.discordapp.net/attachments/1354954334751817741/1465929512356417608/AMW1TPrl44TtBlqlOX9lPxTsLC3mQYxxBtsN3puKR5uU9rNMTD15pkitTge7t8h0VKYxzFvz-JZ4v3vAoEjytzfe9pHQRrMxOWAhHeJXzenzL11Xz2UKboNUSJNSLDmGi7Vg-HH2x25FdPh5nKE7dM7rUjO9ApQw36RLHTD_Dt85LI87yXgnKQSVv9eSwOYJrdy3TlANCnGZgRyRKqcWDKJaeXrbrN-qd5CN4RtLK5bBEg7rokH-BeNdTRYq49nlG_jRgfVdk3idgz_C3S8vaGhNsukcyzoqhT0wyYWb-RhzgJYlbuKHazuQIpbtKjuL7fdb81gNYJy5-3MpiDEUG3lqqyo-s1024-rj.png?ex=697ae4bf&is=6979933f&hm=aed3cca95f2c5be98d9447633a91d3d17f02e095a62efefc088f7128d912b250&=&format=webp&quality=lossless&width=814&height=814"alt="VIP Prata">
+                <p class="price">R$ 95,00</palt="VIP Ouro">
+                <ul class="benefits">
+                    <li>🚗 +3 Slots na Garagem</li>
+                    <li>📸 1 Verificação no Instagram</li>
+                    <li>🎧 Spotify (30 dias)</li>
+                    <li>👕 2 Slots de Roupa</li>
+                    <li>🏍️ Tiger Sport 660s</li>
+                </ul>
+                <button class="btn-pix" onclick="copyPix()">Comprar com PIX</button>
+            </div>
+
+            <div class="card bronze">
+                <img src="https://media.discordapp.net/attachments/1354954334751817741/1465930444292886813/e0cae694-d1ce-4aac-bb59-698b11b0a9a8.png?ex=697ae59d&is=6979941d&hm=06e1a55e1a507660a5c0b64ab39fe8fa81f32376b09811673dbc77f3e24289e1&=&format=webp&quality=lossless&width=814&height=814" alt="VIP Bronze">
+                <h3>VIP BRONZE</h3>
+                <p class="price">R$ 30,00</p>
+                <ul class="benefits">
+                    <li>💵 5.000 de salário a cada 1 hora</li>
+                    <li>🏍️ Titan 2025</li>
+                    <li>👕 1 Slot para salvamento de roupa</li>
+                </ul>
+                <button class="btn-pix" onclick="copyPix()">Comprar com PIX</button>
+            </div>
+        </div>
+
+        <h2 class="section-title">Extras e Serviços</h2>
+        <div class="grid">
+            
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1354954334751817741/1463985257706422316/content.png?ex=697a6984&is=69791804&hm=ab756541f98d3e1ce584bcd836e99e08970dc4b870ac57a2a671ed93187e02bf&=&format=webp&quality=lossless&width=1086&height=724" alt="80 Mil In-game">
+                <h3>80 MIL IN-GAME</h3>
+                <p class="price">R$ 100,00</p>
+                <ul class="benefits">
+                    <li>💵 Adicione R$ 80.000 diretamente na sua conta bancária dentro do servidor.</li>
+                </ul>
+                <button class="btn-pix" onclick="copyPix()">Comprar com PIX</button>
+            </div>
+
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1354954334751817741/1463990983514657082/content.png?ex=697a6eda&is=69791d5a&hm=b9e446b44a18007ae0aa2559934721c8b816b187d8e0b4e89923d4484aaa3417&=&format=webp&quality=lossless&width=1086&height=724" alt="Spotify Premium">
+                <h3>SPOTIFY PREMIUM</h3>
+                <div style="margin-bottom: 15px; text-align: left; font-size: 0.9rem;">
+                    <p>🟢 30 Dias: <strong style="color:#2ecc71">R$ 30,00</strong></p>
+                    <p>🔥 Até o Wipe: <strong style="color:#2ecc71">R$ 100,00</strong></p>
+                </div>
+                <ul class="benefits">
+                    <li>🎧 Ouça suas músicas favoritas sem anúncios em qualquer veículo da cidade.</li>
+                </ul>
+                <button class="btn-pix" onclick="copyPix()">Comprar com PIX</button>
+            </div>
+
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1354954334751817741/1463987288278040639/content.png?ex=697a6b69&is=697919e9&hm=701e3adeb96bb68b962f2fc77ac0b0a1a75d3cc2d0660b1b3d2d4bcefeb9c820&=&format=webp&quality=lossless&width=1086&height=724" alt="Fueltech FT600">
+                <h3>FUELTECH (FT600)</h3>
+                <p class="price">R$ 150,00</p>
+                <ul class="benefits">
+                    <li>🏎️ Gerenciamento completo do motor para máximo desempenho nas corridas.</li>
+                </ul>
+                <button class="btn-pix" onclick="copyPix()">Comprar com PIX</button>
+            </div>
+
+            <div class="card">
+                <img src="https://media.discordapp.net/attachments/1354954334751817741/1463981224166166802/7db799f8-27c2-434f-a8d5-861b1baa122c.png?ex=697a65c3&is=69791443&hm=b9c1655f3428f313d0efb520fe97733ee26d15b1b54458f15c14d4ba1d9921f2&=&format=webp&quality=lossless&width=704&height=724" alt="Unban">
+                <h3>REMOVER BANIMENTO</h3>
+                <p class="price">R$ 50,00</p>
+                <ul class="benefits">
+                    <li>⚠️ Solicite a remoção do seu banimento (verifique as regras com a staff).</li>
+                </ul>
+                <button class="btn-pix" onclick="copyPix()">Comprar com PIX</button>
+            </div>
+
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Jabaquara Roleplay - Todos os direitos reservados.</p>
+        <p style="font-size: 0.7rem; margin-top: 10px;">Chave PIX: adbf2ffc-3005-4f23-9ab9-67be807d0428</p>
+    </footer>
+
+    <script>
+        function copyPix() {
+            const pixKey = "adbf2ffc-3005-4f23-9ab9-67be807d0428";
+            navigator.clipboard.writeText(pixKey).then(() => {
+                alert("✅ Chave PIX copiada com sucesso!\n\nChave: " + pixKey + "\n\nAgora vá ao seu banco e faça o pagamento. Após isso, envie o comprovante no Discord oficial.");
+            }).catch(err => {
+                console.error('Erro ao copiar: ', err);
+            });
+        }
+    </script>
+</body>
+</html>
